@@ -1,0 +1,43 @@
+{
+  "name": "awesome-todos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "review": "vue-cli-service build --mode review",
+    "staging": "vue-cli-service build --mode staging"
+  },
+  "dependencies": {
+    "@saeris/vue-spinners": "^1.0.8",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.24",
+    "chart.js": "^2.9.3",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.9.1",
+    "font-awesome": "4.7.0",
+    "qs": "^6.7.0",
+    "uuid": "^3.3.2",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.5.0",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.21.0",
+    "vuex": "^3.0.1",
+    "yarn": "^1.19.1",
+    "yarn-install": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
