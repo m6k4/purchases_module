@@ -1,13 +1,10 @@
 <template>
   <div class="PlatformPurchasesView">
-    <div class="PlatformPurchasesView__column">
+    <div class="PlatformPurchasesView__columnLeft">
       <PurchasesList :list="list" />
     </div>
-    <div class="PlatformPurchasesView__column">
+    <div class="PlatformPurchasesView__columnRight">
       <Chart />
-    </div>
-    <div class="PlatformPurchasesView__bottom">
-      TEST
     </div>
   </div>
 </template>
@@ -44,10 +41,12 @@ export default {
   .PlatformPurchasesView
     display: flex
     flex-direction: row
+  
+    &__columnLeft
+      width: 70%
+      margin-right: 30px
 
-    &__column
-
-    &__bottom
-
-
+    &__columnRight
+      width: 10%
+    
 </style>
