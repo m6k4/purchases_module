@@ -6,9 +6,12 @@ import {
 } from './mutations-types';
 
 export default {
-  async getList({ commit }) {
+  async getList({ state, commit }) {
     try {
+      const _state = state;
+      _state.listLoading = true;
       const data = await API.get('clients/purchases/getList');
+      _state.listLoading = false;
       commit(FILL_LIST, data);
     } catch (err) {
       console.log(err);

@@ -9,6 +9,7 @@ export default {
       type: Array,
       default: [],
     },
+    loading: false,
   },
 
   data() {

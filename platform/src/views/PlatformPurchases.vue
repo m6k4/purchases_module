@@ -1,7 +1,7 @@
 <template>
   <div class="PlatformPurchasesView">
     <div class="PlatformPurchasesView__columnLeft">
-      <PurchasesList :list="list" />
+      <PurchasesList :list="list" :loading="this.$store.getters['purchases/listLoading']"/>
     </div>
     <div class="PlatformPurchasesView__columnRight">
       <Chart />

@@ -7,10 +7,12 @@ const INITIAL_STATE = {
   list: {
     data: [],
   },
+  listLoading: false,
 };
 
 const getters = {
   list: state => state.list.data,
+  listLoading: state => state.listLoading,
 };
 
 // VUEX MODULE /////////////////////////////////////////////////////////////////

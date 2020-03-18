@@ -1,5 +1,5 @@
 <template>
-  <div class="PurchasesList">
+  <div v-loading="loading" class="PurchasesList">
     <div class="PurchasesList__title">
       <i class="fa fa-shopping-bag" aria-hidden="true"/>
       Ostatnio dokonane zakupy
