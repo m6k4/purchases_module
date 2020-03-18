@@ -5,15 +5,24 @@ export default {
   store,
 
   props: {
+    loading: false,
     list: {
       type: Array,
       default: [],
     },
-    loading: false,
   },
-
+  computed: {
+    filteredList() {
+      if (this.filterValue !== '') {
+        return this.$store.getters['purchases/list']
+          .filter(item => item.price === this.filterValue);
+      }
+      return this.$store.getters['purchases/list'];
+    },
+  },
   data() {
     return {
+      filterValue: '',
     };
   },
 

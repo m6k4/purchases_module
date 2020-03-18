@@ -1,12 +1,29 @@
 <template>
   <div v-loading="loading" class="PurchasesList">
     <div class="PurchasesList__title">
-      <i class="fa fa-shopping-bag" aria-hidden="true"/>
-      Ostatnio dokonane zakupy
+      <div>
+        <i class="fa fa-shopping-bag" aria-hidden="true"/>
+        Ostatnio dokonane zakupy
+      </div>
+      <div> Filtruj
+        <el-select style="margin-left:10px;width:160px"
+                   v-model="filterValue"
+                   placeholder="Filtruj po kwocie"
+                   clearable
+        >
+          <el-option
+                  v-for="item in list"
+                  :key="item.id"
+                  :label="item.price"
+                  :value="item.price">
+          </el-option>
+        </el-select>
+      </div>
+
     </div>
     <div class="PurchasesList__table">
       <el-table
-            :data="list"
+            :data="filteredList"
             style="width: 100%">
         <el-table-column
                 prop="client"

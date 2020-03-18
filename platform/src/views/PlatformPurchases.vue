@@ -24,16 +24,15 @@ export default {
 
   methods: {
   },
-
-  computed: {
+  created() {
+    this.$store.dispatch('purchases/getList');
+  },
+  computed:{
     list() {
       return this.$store.getters['purchases/list'];
     },
   },
 
-  created() {
-    this.$store.dispatch('purchases/getList');
-  },
 };
 </script>
 
