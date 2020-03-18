@@ -5,6 +5,9 @@
         <i class="fa fa-bar-chart" aria-hidden="true" />
         Statystyki
       </div>
+      <div >
+        <chart></chart>
+      </div>
       <div class="content__description">
         Wykres zrealizowanych sprzedaży do liczby udzielonych rabatów
       </div>

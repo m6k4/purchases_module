@@ -1,8 +1,12 @@
-import store from '@/store';
+import { Doughnut } from 'vue-chartjs';
+import chart from './chart';
 
 export default {
+  extends: Doughnut,
   name: 'Chart',
-  store,
+  components: {
+    chart,
+  },
 
   props: {
   },
@@ -11,6 +15,7 @@ export default {
     return {
     };
   },
+
   methods: {
   },
 };
